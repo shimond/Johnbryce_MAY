@@ -1,0 +1,11 @@
+.old {
+    color: red;
+}
+
+.selected {
+    text-decoration: underline;
+}
+
+li {
+    cursor: pointer;
+}
