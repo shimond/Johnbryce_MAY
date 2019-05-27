@@ -1,0 +1,54 @@
+{
+    "questions": [
+        {
+            "text": "2+7",
+            "options": [
+                "9",
+                "33",
+                "5",
+                "123"
+            ],
+            "correctAnswer": "9"
+        },
+        {
+            "text": "2+3",
+            "options": [
+                "7",
+                "33",
+                "5",
+                "123"
+            ],
+            "correctAnswer": "5"
+        },
+        {
+            "text": "22+3",
+            "options": [
+                "7",
+                "33",
+                "5",
+                "25"
+            ],
+            "correctAnswer": "25"
+        },
+        {
+            "text": "100 + 23",
+            "options": [
+                "7",
+                "33",
+                "5",
+                "123"
+            ],
+            "correctAnswer": "123"
+        },
+        {
+            "text": "11+22",
+            "options": [
+                "7",
+                "33",
+                "5",
+                "123"
+            ],
+            "correctAnswer": "33"
+        }
+    ]
+}

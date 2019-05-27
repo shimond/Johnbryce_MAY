@@ -1,0 +1,10 @@
+<h1>{{title}}</h1>
+<div>
+    <ul>
+        <!-- [class.old]="person.age > 10" -->
+        <li *ngFor="let person of people" [class.selected]="person === selectedPerson"
+            [ngClass]="{old:isOld(person), aa : true, bb:10>10}"
+             (click)="selectPerson(person)">{{person.firstName}}
+            {{person.lastName}}</li>
+    </ul>
+</div>
