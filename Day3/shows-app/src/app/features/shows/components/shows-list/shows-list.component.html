@@ -1,0 +1,11 @@
+<div>
+    <div class="show" *ngFor="let show of shows">
+        <h2>{{show.name}}</h2>
+        <div>
+            <img [src]="show.image.medium" />
+        </div>
+        <div [innerHTML]="show.summary">
+            
+        </div>
+    </div>
+</div>
