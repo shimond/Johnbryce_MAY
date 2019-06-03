@@ -1,0 +1,13 @@
+.item {
+    float: left;
+    width: 120px;
+    border: 1px solid black;
+    text-align: center;
+    margin: 10px;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 10px;
+    &:hover{
+        background-color: aliceblue;
+    }
+}
