@@ -1,0 +1,10 @@
+<a routerLink="/shows/more1">More1</a> | 
+<a routerLink="/shows/more2">More2</a> | 
+<br>
+<router-outlet></router-outlet>
+<marquee>Text in SHOWS</marquee>
+
+
+<app-shows-list [shows]="showList$ | async">
+</app-shows-list>
+

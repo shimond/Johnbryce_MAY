@@ -1,0 +1,16 @@
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Pic</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of shows">
+            <td>{{item.name}}</td>
+            <td>
+                <img [src]="item.image.medium" />
+            </td>
+        </tr>
+    </tbody>
+</table>

@@ -1,0 +1,11 @@
+<div>
+    <div
+    
+    class="item" *ngFor="let item of values">
+        {{item.x}} * {{item.y}}
+
+        <button (click)="goToResult(item.x, item.y, '+')">+</button>
+        <button (click)="goToResult(item.x, item.y, '*')">*</button>
+    </div>
+    <hr style="clear: both;">
+</div>

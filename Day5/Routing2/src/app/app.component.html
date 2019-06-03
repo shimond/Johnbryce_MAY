@@ -1,0 +1,19 @@
+<div >
+    <h1>My Web site</h1>
+    <div>
+        <a routerLink="/home">HOME </a> |
+        <a routerLink="/shows">Shows</a> |
+        <a routerLink="/kefel">Kefel </a> |
+        <a routerLink="/about">About </a> | 
+        <a routerLink="/result/1000/1000">1000 * 1000 </a> | 
+        <a routerLink="/result/5/5">5 * 5 </a> | 
+        <a [routerLink]="['/about']">About with array </a>|
+        <button (click)="navigateToAbout()">Go to about</button>
+    </div>
+    <marquee>Text in marquee</marquee>
+    <hr />
+    <div style="background-color: red">
+        <router-outlet></router-outlet>
+    </div>
+    <h3>My footer</h3>
+</div>
