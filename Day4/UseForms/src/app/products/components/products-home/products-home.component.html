@@ -1,0 +1,13 @@
+<h1>Products Home Page</h1>
+<button (click)="deleteProduct()" *ngIf="selectedProduct">Deleted selected product</button>
+<app-product-list [products]="productsFromHomeComponent" [selectedProduct]="selectedProduct"
+    (selectProductRequested)="setSelectedProduct($event)"></app-product-list>
+<div>
+    <h2>Edit Product</h2>
+    <app-products-edit [product]="selectedProduct" *ngIf="selectedProduct" (productSaveRequested)="saveProduct($event)">
+    </app-products-edit>
+    <hr>
+    <h2>Add new Product</h2>
+    <app-products-edit (productSaveRequested)="addProduct($event)" [product]="null">
+    </app-products-edit>
+</div>

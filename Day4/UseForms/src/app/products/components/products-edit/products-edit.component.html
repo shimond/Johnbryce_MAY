@@ -1,0 +1,61 @@
+<form [formGroup]="productForm" *ngIf="productForm" (ngSubmit)="onSave()">
+    <div>
+        <label>Product Name</label>
+    </div>
+    <div>
+        <input type="text" formControlName="name" /><div>{{productForm.controls['name'].errors | json}}</div>
+    </div>
+    <div>
+        <label>Product Price</label>
+    </div>
+    <div>
+        <input type="number" formControlName="price" /><div>{{productForm.controls['price'].errors | json}}</div>
+    </div>
+    <div>
+            <label>Product Image</label>
+        </div>
+        <div>
+            <input type="url" formControlName="imgUrl" /><div>{{productForm.controls['imgUrl'].errors | json}}</div>
+        </div>
+    <div>
+        <hr>
+        {{productForm.errors | json}}
+    </div>
+    <div>
+        <input type="submit" value="save" [disabled]="productForm.invalid" />
+    </div>
+</form>
+
+<!-- 
+<table>
+    <thead>
+        <tr>
+            <th>Product Value</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+                <pre>{{product | json}}</pre>
+            </td>
+
+        </tr>
+    </tbody>
+</table>
+
+
+<table>
+    <thead>
+        <tr>
+            <th>Form Value</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+                <pre>{{productForm?.value | json}}</pre>
+            </td>
+
+        </tr>
+    </tbody>
+</table> -->

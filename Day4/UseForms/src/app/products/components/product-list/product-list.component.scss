@@ -1,0 +1,19 @@
+.productItem{
+    text-align: center;
+    width: 200px;
+    height: 250px;
+    border: 1px solid black;
+    margin: 10px;
+    float: left;
+    border-radius: 9px;
+    padding: 10px;
+    cursor: pointer;
+
+    &.selected{
+        border: 2px solid brown;
+    }
+
+    .productImg{
+        width: 60%;
+    }
+}

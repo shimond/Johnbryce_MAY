@@ -1,0 +1,15 @@
+<div>
+    <div
+    *ngFor="let product of products" class="productItem" [class.selected]="product === selectedProduct"
+    (click)="selectProduct(product)"
+    >
+    
+    <h3>{{product.name}}</h3>
+        <img [src]="product.imgUrl" class="productImg"/>
+        <div>
+            <label>Price : </label> <span>{{product.price | currency}}</span>
+        </div>
+    </div>
+    <hr style="clear: both;">
+</div>
+
