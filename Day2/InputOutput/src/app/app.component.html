@@ -1,0 +1,8 @@
+<app-name-list 
+title="People list"
+[people]="peopleListFromAppComponent"
+[selectedPerson]="selectedPersonFromAppComponent"
+(personSelected)="setSelectedPerson($event)"
+></app-name-list>
+
+<h2>selected : {{selectedPersonFromAppComponent.firstName}}</h2>

@@ -1,0 +1,8 @@
+<ul>
+    <li 
+    [class.selected]="selectedQA === q"
+    [class.correct]="GetUserAnswerStatus(q) === 'Correct'"
+    [class.incorrect]="GetUserAnswerStatus(q) === 'Incorrect'"
+    
+    *ngFor="let q of questions" (click)="askForSelection(q)">{{q.text}}</li>
+</ul>

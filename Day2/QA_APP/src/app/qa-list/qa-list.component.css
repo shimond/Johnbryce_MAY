@@ -1,0 +1,30 @@
+ul {
+    list-style-type: none;
+    padding: 0px;
+    width: 22%;
+}
+
+ul li {
+    cursor: pointer;
+    min-width: 120px;
+    margin: 5px;
+    border: 1px solid black;
+    border-radius: 9px;
+    padding: 10px;
+    text-align: center;
+
+}
+
+
+.correct {
+    background-color: green;
+}
+
+.incorrect {
+    background-color: red;
+}
+
+.selected
+{
+    border: 2px solid purple !important;
+}

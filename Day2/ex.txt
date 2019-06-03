@@ -1,0 +1,4 @@
+Angular v7 Snippets
+Angular Language Service
+angular2-switcher
+TSLint
